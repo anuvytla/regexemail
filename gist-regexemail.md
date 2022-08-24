@@ -49,13 +49,26 @@ The charactor class `/d` is used which in Javasctipt classifies the use of any d
 
 ### Grouping and Capturing
 
-
+A regex captures characters by using parenthesis () to group them.
+There are three groups captured in this example. Group #1 is the username of the e-mail account `[a-z0-9_\.-]`. The second group captures the domain name or e-mail service being used `[\da-z\.-]`.Lastly, the third group captures the domain extention (i.e .com or .net) `[a-z\.]{1,3}`
 
 ### Bracket Expressions
 
+Brackets are used in this regex to define the character sets. The information in the bracket expressions is opened and closed between brackets like this `[]`. This indentifies which information is allowed to be matched.
+
+In this example they are 3 bracket expressions being used
+
+- `[a-z0-9_\.-]` - includes case sensitive characters from a-z, numbers from 0-9 an underscore, periods and hyphens.
+- `[\da-z\.-]` - includes all digits, case sensitive characters from a-z, periods and hyphens.
+- `[a-z\.]` - includes case sensitive characters from a-z and periods.
 
 
 ### Greedy and Lazy Match
 
+In this example we  used greedy quantifiers `+` and `{}`, meaning that it will allow the match to expand as long as it neess to go. If these quantifiers were lazy quantifiers, they would appear as `+?` or `{}?`, this will direct the system to make the shortest match.
 
 ## Author
+
+This is Anusha, full stack developer with an expertise in `MERN` stack.
+
+[Github Profile Link](#https://github.com/anuvytla/)
